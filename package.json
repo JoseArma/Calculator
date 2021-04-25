@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Una calculadora",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseArma/Calculator.git"
+  },
+  "keywords": [
+    "Javascript",
+    "calculadora"
+  ],
+  "author": "Jose Vence <vencearma@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseArma/Calculator/issues"
+  },
+  "homepage": "https://github.com/JoseArma/Calculator#readme"
+}

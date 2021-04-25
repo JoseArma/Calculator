@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 180px;
+}
+
+.boton {
+    font-size: 50px;
+    font-family: 'Zen Dots', cursive;
+    font-weight: 400;
+    border: 1px solid #fb3640;
+    background-color: #542e71;
+    color: #fdca40;
+}
+
+.boton:active {
+    background-color: #fdca40;
+    color: #a799b7;
+}
+
+.hold {
+    font-size: 40px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    direction: rtl;
+    outline: none;
+}
+
+.board-number {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
