@@ -1,2 +1,2 @@
-# Calculator
-Una calculadora
+# Design by Jose Armando
+## The best calculator in the world :D
