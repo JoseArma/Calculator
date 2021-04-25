@@ -15,85 +15,132 @@ const point = document.getElementById('point')
 ---------------BOTONES DE OPERACIONES */
 
 const sum = document.getElementById('buttonSum')
-const rests = document.getElementById('buttonRest')
+const rest = document.getElementById('buttonRest')
 const multiplication = document.getElementById('buttonMulti')
 const division = document.getElementById('buttonDivi')
-const resultant = document.getElementById('buttonResult')
+const resultado = document.getElementById('buttonResult')
 const clean = document.getElementById('clear')
 
+function cleanImput() {
+    placeh.value = ""
+}
 
 function ModifyPlaceHolder() {
     let num = document.calculator.numero1.value
-    placeh.placeholder += num
-    placeh.value += 1
+    placeh.value += num
 
 }
 
 function ModifyPlaceHolder2() {
     let num = document.calculator.numero2.value
-    placeh.placeholder += num
-    placeh.value += 2
+    placeh.value += num
 }
 
 function ModifyPlaceHolder3() {
     let num = document.calculator.numero3.value
-    placeh.placeholder += num
-    placeh.value += 3
+    placeh.value += num
 }
 
 function ModifyPlaceHolder4() {
     let num = document.calculator.numero4.value
-    placeh.placeholder += num
-    placeh.value += 4
+    placeh.value += num
 }
 
 function ModifyPlaceHolder5() {
     let num = document.calculator.numero5.value
-    placeh.placeholder += num
-    placeh.value += 5
+    placeh.value += num
 }
 
 function ModifyPlaceHolder6() {
     let num = document.calculator.numero6.value
-    placeh.placeholder += num
-    placeh.value += 6
+    placeh.value += num
 }
 
 function ModifyPlaceHolder7() {
     let num = document.calculator.numero7.value
-    placeh.placeholder += num
-    placeh.value += 7
+    placeh.value += num
 }
 
 function ModifyPlaceHolder8() {
     let num = document.calculator.numero8.value
-    placeh.placeholder += num
-    placeh.value += 8
+    placeh.value += num
 }
 
 function ModifyPlaceHolder9() {
     let num = document.calculator.numero9.value
-    placeh.placeholder += num
-    placeh.value += 9
+    placeh.value += num
 }
 
 function ModifyPlaceHolder0() {
     let num = document.calculator.numero0.value
-    placeh.placeholder += num
-    placeh.value += 0
+    placeh.value += num
 }
 
 
 function ModifyPlaceHolderPunt() {
     let num = document.calculator.point.value
-    placeh.placeholder += num
     placeh.value += num
+}
+
+function suma() {
+    valor1 = Number(placeh.value)
+    cleanImput()
+    operacion = 'suma'
+}
+
+function resta() {
+    valor1 = Number(placeh.value)
+    cleanImput()
+    operacion = 'resta'
+}
+
+function multiplicacion() {
+    valor1 = Number(placeh.value)
+    cleanImput()
+    operacion = 'multiplicacion'
+}
+
+function divition() {
+    valor1 = Number(placeh.value)
+    cleanImput()
+    operacion = 'division'
+}
+
+function resultant() {
+    valor2 = Number(placeh.value)
+    if (operacion === 'suma') {
+        const opResult = valor1 + valor2
+        placeh.value = opResult
+    } else if (operacion === 'resta') {
+        const opResult = valor1 - valor2
+        placeh.value = opResult
+    } else if (operacion === 'multiplicacion') {
+        const opResult = valor1 * valor2
+        placeh.value = opResult
+    } else if (operacion === 'division') {
+        const opResult = valor1 / valor2
+        placeh.value = opResult
+    } else {
+        const error = new error(place.value = 'Cagaste');
+    }
 }
 
 
 
+/* 
+---------------BOTONES DE OPERACIONES  */
+
+sum.addEventListener("click", suma)
+rest.addEventListener("click", resta)
+multiplication.addEventListener("click", multiplicacion)
+division.addEventListener("click", divition)
+clean.addEventListener("click", cleanImput)
+resultado.addEventListener("click", resultant)
 
 
+
+/* 
+---------------BOTONES DE TECLADO  */
 
 button1.addEventListener("click", ModifyPlaceHolder)
 button2.addEventListener("click", ModifyPlaceHolder2)
@@ -106,29 +153,3 @@ button8.addEventListener("click", ModifyPlaceHolder8)
 button9.addEventListener("click", ModifyPlaceHolder9)
 button0.addEventListener("click", ModifyPlaceHolder0)
 point.addEventListener("click", ModifyPlaceHolderPunt)
-
-
-/* 
----------------BOTONES DE OPERACIONES  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-function saludo() {
-    console.log("sifunciona")
-}
-
-button1.addEventListener("click", saludo) */

@@ -1,6 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: lightblue;
+}
+
+main {
+    background-color: gray;
+    width: 40%;
+    height: 400px;
+    border-radius: 25px;
+    margin: 0 auto;
 }
 
 .all {
@@ -15,14 +24,14 @@ body {
     font-size: 50px;
     font-family: 'Zen Dots', cursive;
     font-weight: 400;
-    border: 1px solid #fb3640;
-    background-color: #542e71;
-    color: #fdca40;
+    border: 1px solid black;
+    background-color: #353030;
+    color: #ffffff7a;
 }
 
 .boton:active {
-    background-color: #fdca40;
-    color: #a799b7;
+    background-color: white;
+    color: black;
 }
 
 .hold {
@@ -37,4 +46,43 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+}
+
+#buttonSum {
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+
+#buttonRest {
+    grid-row: 2;
+    grid-column: 4
+}
+
+#buttonMulti {
+    grid-row: 3;
+    grid-column: 4
+}
+
+#buttonDivi {
+    grid-row: 4;
+    grid-column: 4
+}
+
+#buttonResult {
+    grid-row: 5;
+    grid-column: 4
+}
+
+.title {
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-column-end: 1;
+    font-size: 60px;
+    width: 150%;
+    background-color: #353030;
+    color: black;
+    height: 65px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
 }
