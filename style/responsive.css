@@ -1,0 +1,39 @@
+    @media screen and (max-width: 1023px) {
+        main {
+            width: 65%;
+            height: 410px;
+        }
+        .all {
+            top: 50px;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {}
+    
+    @media screen and (max-width: 480px) {
+        .container {
+            width: 100%;
+        }
+        .hold {
+            font-size: 24px;
+            border-radius: none;
+        }
+        main {
+            border-radius: none;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .hold {
+            width: 200px;
+        }
+        .boton {
+            font-size: 25px;
+            width: 53px;
+            height: 70px;
+        }
+        .title {
+            height: 70px;
+            font-size: 30px;
+        }
+    }
