@@ -13,29 +13,28 @@
 
 <body>
     <main class="all">
-        <form name="calculator" me>
-            <input type="text" class="hold" id="inputWindow" placeholder="Casio">
+        <form name="calculator">
+            <input type="text" class="hold" name="window" id="inputWindow" value="" placeholder="">
             <div class="board-number">
-                <button type="button" class="boton" id="number1">1</button>
-                <button type="button" class="boton" id="number2">2</button>
-                <button type="button" class="boton" id="number3">3</button>
-                <button type="button" class="boton" id="number4">4</button>
-                <button type="button" class="boton" id="number5">5</button>
-                <button type="button" class="boton" id="number6">6</button>
-                <button type="button" class="boton" id="number7">7</button>
-                <button type="button" class="boton" id="number8">8</button>
-                <button type="button" class="boton" id="number9">9</button>
-                <button type="button" class="boton" id="number0">0</button>
-                <button type="button" class="boton" id="point">.</button>
+                <button type="button" class="boton" id="number1" name="numero1" value="1">1</button>
+                <button type="button" class="boton" id="number2" name="numero2" value="2">2</button>
+                <button type="button" class="boton" id="number3" name="numero3" value="3">3</button>
+                <button type="button" class="boton" id="number4" name="numero4" value="4">4</button>
+                <button type="button" class="boton" id="number5" name="numero5" value="5">5</button>
+                <button type="button" class="boton" id="number6" name="numero6" value="6">6</button>
+                <button type="button" class="boton" id="number7" name="numero7" value="7">7</button>
+                <button type="button" class="boton" id="number8" name="numero8" value="8">8</button>
+                <button type="button" class="boton" id="number9" name="numero9" value="9">9</button>
+                <button type="button" class="boton" id="number0" name="numero0" value="0">0</button>
+                <button type="button" class="boton" id="point" value=".">.</button>
 
                 <!-- ----------------------BOTONES CALCULA---------------- -->
 
-                <input class="boton" id="buttonSum" type="Button" name="" value=" + ">
-                <input class="boton" id="buttonRest" type="Button" name="" value=" - ">
-                <input class="boton" id="buttonMulti" type="Button" name="" value=" X ">
-                <input class="boton" id="buttonDivi" type="Button" name="" value=" / ">
-                <input class="boton" id="buttonResult" type="Button" name="" value=" = ">
                 <button class="boton" id="clear">C</button>
+                <input type="Button" class="boton" name="" value=" + " onclick="calcula('+')">
+                <input type="Button" class="boton" name="" value=" - " onclick="calcula('-')">
+                <input type="Button" class="boton" name="" value=" X " onclick="calcula('*')">
+                <input type="Button" class="boton" name="" value=" / " onclick="calcula('/')">
             </div>
         </form>
     </main>
